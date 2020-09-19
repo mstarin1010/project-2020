@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('mstarin1010/project-2020 ', 'dockerid') {
+    docker.withRegistry('https://registry.hub.docker.com', 'dockerHub') {
 
         def customImage = docker.build("mstarin/project-2020")
 
